@@ -2,6 +2,7 @@
 html, body {
     height: 100%;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 ul {
     margin: 0px;
@@ -14,9 +15,48 @@ li {
 a {
     color: rgb(170, 170, 170);
     text-decoration: none;
+    font-size: small;
 }
 a:hover {
     color: grey;
+    font-size: small;
+}
+
+hr {
+    height: 1px;
+    background-color: rgb(219, 215, 215);
+    border: none;
+}
+h3 {
+    color: rgb(151, 52, 52);
+    margin-left:50px;
+    font-weight: lighter;
+}
+h5 {
+    margin-left:50px;
+}
+form {
+    width:1200px;
+}
+
+p {
+    font-size: x-small;
+}
+label {
+    font-size: small;
+}
+p, label{
+    margin:0px;
+    padding: 10px 0px;
+}
+
+input,select {
+    margin: 5px;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid #4787ed;
 }
 /* CLASSES */
 .flex_list_container {
@@ -26,12 +66,25 @@ a:hover {
     padding:15px;
     margin: 10px;
     color: rgb(170, 170, 170);
-    font-family: Arial, Helvetica, sans-serif;
     font-size: small;
 }
+
 .flex_item_list li{
     margin: 5px;
     display: inline;
+}
+
+.advance {
+    margin-left:50px;
+    margin-bottom:20px;
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: 230px auto 500px;
+}
+
+.advance_items {
+    display: grid;
+    flex-direction: column;
 }
 
 /* IDS */
@@ -43,10 +96,8 @@ a:hover {
     
 }
 #logo {
-    width: 20%;
     height: 20%;
 }
-
 #search_items {
     display: flex;
     flex-direction: column;
@@ -95,6 +146,32 @@ a:hover {
     border-radius: 5px;
 }
 
+#advance_button {
+    /* I am tired and do not want to use big brain energy to 
+        make this more acceptable. I may never fix this tbh.
+        Forgive me Code Father, for I have sinned and keeping it this way. */
+    margin-left:570px;
+    margin-bottom:20px;
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: white;
+    box-shadow: none;
+    height: 30px;
+    width:120px;
+}
+#advance_button:hover {
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+}
+#advance_section {
+    display: flex;
+    flex-grow: 2;
+}
 #footer {
     align-content: flex-end;
 }
+
+#helper {
+    display: flex;
+    flex-direction: row;
+}
+

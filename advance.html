@@ -1,1 +1,129 @@
 <!--Advance Search-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1d0eb2b461.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="flex_list_container">
+            <img src="img/google_logo_small.png" atl="google logo in primary colors">
+            <ul class="flex_item_list">
+                <li><a href="index.html">Search</a></li>
+                <li><a href="image.html">Images</a></li>
+            </ul>
+        </div>
+        <h3>Advance Search</h3>
+        <hr>
+        <div id="container">
+            <div id="advance_section">
+                <form action="https://google.com/search">
+                    <h5>Find pages with...</h5>
+                    <div class="advance">
+                        <div class="advance_items">
+                            <label>all these words:</label>
+                            <label>this exact word or phrase:</label>
+                            <label>any of these words:</label>
+                            <label>none of these words:</label>
+                            <label>numbers ranging from:</label>
+                        </div>
+                        <div class="advance_items">
+                            <input type="text" name="as_q">
+                            <input type="text" name="as_epq">
+                            <input type="text" name="as_oq">
+                            <input type="text" name="as_eq">
+                            <div id="helper">
+                                <input type="text" name="as_nlo"> <p>to</p> <input type="text" name="as_nhi">
+                            </div>
+                        </div>
+                        <div class="advance_items">
+                            <p>Type the important words:  tricolor rat terrier</p>
+                            <p>Put exact words in quotes:  "rat terrier"</p>
+                            <p>Type OR between all the words you want:  miniature OR standard</p>
+                            <p>Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</p>
+                            <p>Put 2 periods between the numbers and add a unit of measure: 10..35 lb, $300..$500, 2010..2011</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h5>Then narrow your results by...</h5>
+                    <div class="advance">
+                        <div class="advance_items">
+                        <label>language:</label>
+                        <label>region:</label>
+                        <label>last update</label>
+                        <label>site or domain:</label>
+                        <label>terms appearing:</label>
+                        <label><a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637320577920332121-3421308402&rd=1">
+                            SafeSearch</a></label>
+                        <label>file type:</label>
+                        <label><a href="https://support.google.com/websearch/answer/29508?p=ws_images_usagerights&hl=en&visit_id=637320577920332121-3421308402&rd=1">
+                            usage rights:</a></label>
+                        </div>
+                        <div class="advance_items">
+                            <!--Disabled because I don't know the codes that Google uses for these options-->
+                            <select disabled>
+                                <option></option>
+                            </select>
+                            <select disabled>
+                                <option></option>
+                            </select>
+                            <select disabled>
+                                <option></option>
+                            </select>
+                            <input type="text" name="as_sitesearch">
+                            <select disabled>
+                                <option></option>
+                            </select>
+                            <select disabled>
+                                <option></option>
+                            </select>
+                            <select disabled>
+                                <option></option>
+                            </select>
+                            <select disabled>
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class="advance_items">
+                            <p>Find pages in the language you select.</p>
+                            <p>Find pages published in a particular region.</p>
+                            <p>Find pages updated within the time you specify.</p>
+                            <p>Search one site (like  wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</p>
+                            <p>Search for terms in the whole page, page title, or web address, or links to the page you're looking for.</p>
+                            <p>Tell SafeSearch whether to filter sexually explicit content.</p>
+                            <p>Find pages in the format you prefer.</p>
+                            <p>Find pages you are free to use yourself.</p>
+                        </div>
+                    </div>
+                    <input id="advance_button" type="submit" value="Advance Search">
+                    <hr>
+                    <h5>You can also...</h5>
+                    <div class="advance">
+                        <div class="advance_items">
+                            <a href="https://support.google.com/websearch/answer/2466433?visit_id=637321001441073774-2077155886&p=adv_pages_similar&hl=en&rd=1">
+                                Find pages that are similar to a URL
+                            </a>
+                            <a href="https://support.google.com/websearch/answer/54068?p=adv_pages_visited&hl=en&visit_id=637321001441073774-2077155886&rd=1">
+                                Search pages you've visited
+                            </a>
+                            <a href="https://support.google.com/websearch/answer/2466433?visit_id=637321001441073774-2077155886&p=adv_operators&hl=en&rd=1">
+                                Use operators in the search box
+                            </a>
+                            <a href="https://www.google.com/preferences?hl=en">
+                                Customize your search settings
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="footer" class="flex_list_container">
+                <ul class="flex_item_list">
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Settings</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
